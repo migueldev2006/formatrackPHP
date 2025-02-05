@@ -14,7 +14,7 @@ class BaseConexion
     public function __construct()
     {
         //configirasr la conexion
-        $dsn = "mysql:host=" . $this->host . ";dbname=" . $this->dataBase;
+        $dsn = "pgsql:host=" . $this->host . ";dbname=" . $this->dataBase;
         $opciones = array(
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
@@ -23,7 +23,6 @@ class BaseConexion
         //Crear instancia de PDO
         try {
             $this->dbh = new PDO($dsn, $this->user, $this->pass, $opciones);
-            $this->dbh->exec('set names utf8');
         } catch (PDOException $e) {
             $this->error = $e->getMessage();
             echo $this->error;
@@ -78,9 +77,9 @@ class BaseConexion
     }
 
     //Obtener cantiad de filas con el metodo rowCount
-    public function rowConunt()
+    public function rowCount()
     {
         $this->execute();
-        return $this->stmt->rowConunt();
+        return $this->stmt->rowCount();
     }
 }

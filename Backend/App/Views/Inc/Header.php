@@ -16,7 +16,7 @@
         <div class="col-md-8 mx-auto">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mb-3">
                 <div class="container-fluid">
-                    <a href="<?php echo RUTA_URL; ?>" class="navbar-brand">CRUD MVC</a>
+                    <a href="<?php echo RUTA_URL; ?>" class="navbar-brand">FORMATRACK</a>
                     <a class="btn btn-secondary ms-3" href="<?php echo RUTA_URL; ?>paginas/agregar">Insertar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

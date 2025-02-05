@@ -14,4 +14,4 @@ define('RUTA_APP', dirname(__DIR__));
 define('RUTA_URL', 'http://localhost/formatrack/'); //Se debe cambiar la ruta.
 
 
-define('FORMATRACK', 'CRUD MVC PROYECTO FORMATIVO');
+define('FORMATRACK', 'CRUD MVC FORMATRACK');
