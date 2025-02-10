@@ -5,7 +5,7 @@ class BaseConexion
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASS;
-    private $dataBase = DB_NOMBREDB;
+    private $dataBase = DB_NAME;
 
     private $dbh;
     private $stmt;
